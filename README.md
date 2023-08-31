@@ -11,3 +11,4 @@
 * Углубилась в Git и Bash, работа стала осознаннее
 
 ### Сылка на репозиторий проекта:  
+https://github.com/Natalia-Kimel/posmotri_v_okno/tree/main
