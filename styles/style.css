@@ -42,7 +42,7 @@ ol {
 
 .content {
   width: 1140px;
-  height: 534px;
+  min-height: 534px;
   display: flex;
   gap: 30px;
   align-items: end;
@@ -98,7 +98,7 @@ ol {
   outline-offset: 1px;
 }
 
-.search-form__label_underline:hover {
+.search-form__label:hover {
   text-decoration: underline;
 }
 
@@ -174,7 +174,7 @@ ol {
   font-weight: 700;
   line-height: normal;
   background-color: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid currentColor;
   cursor: pointer;
 }
 
@@ -224,8 +224,9 @@ button:active {
 
 .content__list {
   position: relative;
-  overflow: auto;
+  overflow: scroll;
   padding: 2px;
+  height: 298px;
 }
 
 .content__list-item:not(:last-child) {
@@ -249,6 +250,10 @@ button:active {
 
 .content__card-link:hover {
   text-decoration: underline;
+}
+
+.content__card-link:active {
+  background-color: #545050;
 }
 
 .content__card-link_current {
