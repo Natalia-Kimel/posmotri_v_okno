@@ -67,13 +67,11 @@ ol {
   grid-template-columns: repeat(3, 1fr);
   justify-items: end;
   height: 54px;
+  gap: 40px
 }
 
 .search-form__fieldset {
   border: none;
-}
-
-.search-form__fieldset-start {
   justify-self: start;
 }
 
@@ -96,10 +94,6 @@ ol {
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #FFF;
   outline-offset: 1px;
-}
-
-.search-form__label:hover {
-  text-decoration: underline;
 }
 
 .visually-hidden {
@@ -165,6 +159,10 @@ ol {
   
 }
 
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
 .button {
   height: 34px;
   color: inherit;
@@ -224,13 +222,13 @@ button:active {
 
 .content__list {
   position: relative;
-  overflow: scroll;
+  overflow: auto;
   padding: 2px;
   height: 298px;
 }
 
 .content__list-item:not(:last-child) {
-  margin-block-end: 30px;
+  margin-block-end: 34px;
 }
 
 .content__card-link {
